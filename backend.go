@@ -87,6 +87,7 @@ func Backend(writer http.ResponseWriter, request *http.Request) {
 	}
 }
 
+// main function
 func main() {
 	http.HandleFunc("/", Backend)
 	fmt.Println("Starting server on port 80")
